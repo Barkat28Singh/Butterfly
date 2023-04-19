@@ -1,0 +1,346 @@
+html{
+    height: auto;
+    width: 100%;
+    margin:0;
+    padding: 0;
+}
+
+li{
+    cursor: pointer;
+    
+}
+
+a{
+    cursor: pointer;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin:0;
+    padding: 0;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)) ,url('/assets/backgroundpic.jpg');
+    color: white;
+    padding-top:60px;
+    background-size: cover;
+}
+
+.pageContent{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height:auto;
+    justify-content: center;
+}
+
+#orangesignup{
+    color: #ff1003;
+}
+
+
+
+.intro{
+    display: flex;
+    flex-direction:column ;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
+
+.explanation{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    font-weight: 500;
+    justify-content: center;
+    align-items: center;
+}
+
+.myform{
+    max-width: 100%;
+}
+
+.modal-body{
+    padding:0px;
+}
+
+.btn-close{
+    position:absolute;
+    right: 0;
+    padding: 1em;
+}
+
+.modal-content{
+    width: 80%;
+    margin:0 auto;
+}
+
+.modal-body{
+    padding: 0;
+}
+
+#signintitle{
+    font-size: 2em;
+    font-weight: bold;
+    padding: 25px;
+}
+
+#loginform{
+    background-color:#FF1003;
+    border-radius: 25px;
+}
+
+#formcontent{
+    border-radius: 30px;
+}
+
+.myform{
+    padding: 2em;
+    max-width: 100%;
+    color: white;
+    box-shadow: 0 4px 6px 0 rgba(22, 22, 26, 0.18);
+    @media(max-width:576px){
+        max-width:90%;
+        margin:0px auto;
+    }
+}
+
+.form-control{
+    color:white;
+    padding-left: 0px;
+    border:0px;
+    border-bottom:1px solid white;
+}
+
+.myform .btn{
+    width:50%;
+    font-weight: 400;
+    background-color: #FF1003;
+    color: white;
+    border-radius: 20px;
+    padding: 0.5em 0;
+    border: none;
+}
+
+
+
+.myform .btn:hover{
+    color:#333
+}
+
+p{
+    text-align: center;
+    padding-top:2em;
+}
+
+p a{
+    color:#e1e1e1;
+    text-decoration: none;
+}
+
+p a:hover{
+    color: white;
+}
+
+.signButtons{
+    display: flex;
+    margin-top:20px;
+    gap: 50px;
+}
+
+#signintitle{
+    margin-bottom: 0;
+}
+
+#signUp{
+    background-color: orangered;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    width: 150px;
+    color: white;
+    font-weight: 500;
+    transition: ease-in-out 0.2s;
+}
+
+#signUp:hover{
+    background-color: #2B0504;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    width: 150px;
+    color: white;
+    font-weight: 500;
+}
+
+
+#signIn{
+    background-color: orangered;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    width: 150px;
+    color: white;
+    font-weight: 500;
+    transition: ease-in-out 0.2s;
+}
+
+#signIn:hover{
+    background-color: #2B0504;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    width: 150px;
+    color: white;
+    font-weight: 500;
+}
+
+#signIn2{
+    background-color: orange;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    width: 150px;
+    color: white;
+    font-weight: 500;
+    transition: ease-in-out 0.2s;
+}
+
+#signIn2:hover{
+    background-color: #2B0504;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    width: 150px;
+    color: white;
+    font-weight: 500;
+}
+
+#signUp2{
+    background-color: orange;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    width: 150px;
+    color: white;
+    font-weight: 500;
+    transition: ease-in-out 0.2s;
+}
+
+#signUp2:hover{
+    background-color: #2B0504;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    width: 150px;
+    color: white;
+    font-weight: 500;
+}
+
+
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    gap: 40px;
+}
+
+.bi{
+    width: 50px;
+    height: 50px;
+}
+
+#personIcon{
+    width: 35px;
+    height: 35px;
+    padding: 3px;
+}
+
+#emailIcon{
+    width: 35px;
+    height: 35px;
+    padding: 3px;
+}
+
+#phoneIcon{
+    width: 35px;
+    height: 35px;
+    margin-bottom: 3px;
+    padding: 3px;
+}
+
+#passwordIcon{
+    width: 35px;
+    height: 35px;
+    margin-bottom: 3px;
+    padding: 3px;
+}
+
+#orangebutterfly{
+    width: 200px;
+    height:100px;
+    mix-blend-mode:color-dodge;
+    padding: 0;
+    margin: 0;
+}
+
+input{
+    background-color: #FF1003;
+}
+
+input[type="text"]{
+    background: transparent;
+    background-color: #FF1003;
+    border: none;
+    color: #fff;
+    border-radius: 0;
+    border-bottom: 1px solid white;
+    outline: none;
+    padding: 5px;
+}
+
+input[type="email"]{
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid white;
+    outline: none;
+    padding: 5px;
+}
+
+input[type="password"]{
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid white;
+    outline: none;
+    padding: 5px;
+}
+
+input {
+   
+     box-shadow: none !important; 
+}
+
+:-webkit-autofill {
+     color: #fff !important; 
+}
+  
+.form-control:focus, .form-control:active {
+        background: transparent;
+        outline: none;
+        border-bottom: 1px solid white;
+}
+
+footer {
+    background-color: #FF1003;
+    margin-top: 40vh;
+    text-align: center;
+}
+

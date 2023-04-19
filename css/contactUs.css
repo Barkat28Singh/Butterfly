@@ -1,0 +1,103 @@
+
+/* CSS FOR MOBILE DEVICE  */
+ 
+body {
+    box-sizing: border-box;
+} 
+
+
+li{
+    cursor: pointer;
+    
+}
+
+a{
+    cursor: pointer;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)) ,url(/assets/backgroundpic.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    color: white;
+}
+
+
+
+
+#nav-list {
+    background-color: #FF1003;
+    display: flex;
+    margin: 0;
+    margin-bottom: 20px;
+    justify-content: flex-end;
+    align-items: center;
+    height: 60px;
+}
+
+#whitecircle{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    margin-left: 0.1rem;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#orangebutterfly{
+    width: 80px;
+    height:80px;
+    padding: 0;
+    margin-top: 10px;
+    margin-right: 22px;
+}
+
+#nav-item {
+    list-style: none;
+    margin: 1rem; 
+}
+
+#nav-item a {
+    text-decoration: none;
+    color: white;
+}
+
+#nav-item:first-child {
+    margin-right: auto;
+    margin-left: 2rem;
+}
+
+
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+}
+
+#sendBtn{
+    margin-top:5px;
+    background-color: #FF1003;
+}
+
+footer {
+    background-color: #FF1003;
+    margin-top: auto;
+    text-align: center;
+}
+
+  @media (min-width: 1025px)  {
+    #wrapper {
+        display: flex;
+        flex-direction: column;
+        background-image:linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)) ,url(/assets/backgroundpic.jpg);
+        background-size: cover;
+        
+
+    }
+  }

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css"
+        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/User-profile.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- NAVBAR  -->
+        <navbar>
+            <ul id="nav-list">
+                <div id="whitecircle">
+                    <li id="nav-item"><a href="/html/User-profile-page.html"><img id="orangebutterfly"
+                                src="/assets/orange_butterfly.svg" alt=""></a>
+                    </li>
+                </div>
+                <li id="nav-item"><a href="/html/User-profile-page.html">Profile</a></li>
+                <li id="nav-item"><a href="/html/myChat.html">Mychat</a></li>
+                <li id="nav-item"><a href="/html/contactUs.html">Contact</a></li>
+                <li id="nav-item"><a id="logout">Logout</a></li>
+
+            </ul>
+
+        </navbar>
+
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card mb-4">
+                    <div class="card-body text-center " id="bottom-card"
+                        style="background-color:#FF1003; color:white; padding:10px; border-radius:10px; margin-left: 10px;">
+                        <!--User Image-->
+                        <div class=" d-flex justify-content-center align-items-center bg-dark" style="width: 200px; height
+                        :200px; background-color:lightgray; margin: 0 auto; border-radius: 90%;"><img
+                                src=" https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3.webp"
+                                alt="avatar" class="rounded-circle img-fluid" style="width: 150px;"></div>
+                        <!--User Image -->
+
+                        <h5 class="my-3" id="full_name"></h5>
+                        <p class="fw-bold">Full Stack Developer</p>
+                        <p class="fw-bolder">Bay Area, San Francisco, CA</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div class="card bg-warning" id="bio-card"
+                    style="background-color:rgb(108, 108, 108); color:white; border-radius: 10px; padding:20px; padding-bottom:6%; margin-right:10px;">
+                    <div class="card-body" id="form_data">
+                        <div class="row" id="row1">
+                            <div class="col-sm-3" style="color:white;">
+                                <p class="fw-bold mb-0">Full Name</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row" id="row2">
+                            <div class="col-sm-3">
+                                <p class="fw-bold mb-0">Email</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row" id="row3">
+                            <div class="col-sm-3">
+                                <p class=" fw-bold mb-0">Phone</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row" id="row4">
+                            <div class="col-sm-3">
+                                <p class=" fw-bold mb-0">Username</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row" id="row5">
+                            <div class="col-sm-3">
+                                <p class="mb-0">password</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card d-flex justify-content-center align-items-center flex-column "
+                style="border-radius:10px; padding:20px; margin-top:25%; margin-left: 20px; margin-right: 20px; background-color:rgb(108, 108, 108); color:white;">
+                <div class="card-body">
+                    <div class="row g-0">
+                        <h3 class="text-center">Creative Space</h3>
+                        <p class="text-center">Use this space to add images, be it your own or your artwork
+                            and creativity. Select a file at a time from the upload file button. Remember, these files
+                            get stored with us and are shown in your creative space once you press submit, then refresh
+                            your page with the refresh button to see your file displayed!
+                            Spread your wings and fly with us and unleash your creativity! </p>
+                        <div class="d-flex justify-content-center align-items-center flex-column">
+
+                            <div id="gallery">
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="up">
+                <button type="button" class="btn-warning ">
+                    <i class="fa fa-upload"></i> Upload Files
+                    <input id="uploadButton" type="file"></input>
+                </button>
+            </div>
+            <input id="showfile" type="submit"></input>
+            <button class="btn-warning " id="refresh">Refresh</button>
+
+
+
+
+        </div>
+    </div>
+    <footer>2023 @ Butterfly Copyright</footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-storage.js"></script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyAk1wR9HO9Sw3ybAD_X0jgW2iNytM7Mx4c",
+            authDomain: "butterfly-d8ddf.firebaseapp.com",
+            projectId: "butterfly-d8ddf",
+            storageBucket: "butterfly-d8ddf.appspot.com",
+            messagingSenderId: "400345594764",
+            appId: "1:400345594764:web:584b84269381153a6234a9"
+        };
+
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="/js/user-profile.js"></script>
+</body>
+
+</html>

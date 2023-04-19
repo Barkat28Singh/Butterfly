@@ -1,0 +1,430 @@
+
+/* CSS FOR MOBILE DEVICE  */
+ 
+ body {
+    box-sizing: border-box;
+    overflow:none;
+} 
+
+li{
+    cursor: pointer;
+    
+}
+
+a{
+    cursor: pointer;
+}
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)) ,url(/assets/backgroundpic.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    color: white;
+}
+
+
+footer {
+    background-color: #FF1003;
+    margin-top: auto;
+    text-align: center;
+}
+
+#nav-list {
+    background-color: #FF1003;
+    display: flex;
+    margin: 0;
+    margin-bottom: 20px;
+    justify-content: flex-end;
+    align-items: center;
+    height: 60px;
+}
+
+#whitecircle{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    margin-right: auto;
+    margin-left: 2.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#orangebutterfly{
+    width: 80px;
+    height:80px;
+    padding: 0;
+    margin-top: 10px;
+    margin-right: 22px;
+}
+
+
+#nav-item {
+    list-style: none;
+    margin: 1rem; 
+}
+
+#nav-item a {
+    text-decoration: none;
+    color: white;
+}
+
+#nav-item:first-child {
+    margin-right: auto;
+    margin-left: 2rem;
+}
+
+#description {
+    background-color:rgb(108, 108, 108);
+    border-radius: 20px;
+    padding: 15px;
+    margin: 0 20px 0 20px;
+}
+
+#question {
+    background-color:rgb(108, 108, 108);
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+    align-items: center;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 0 20px 0 20px;
+}
+
+#next {
+    display: flex;
+    justify-content: center;
+}
+
+#postButton-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top:5px;
+}
+
+ul, li {
+    list-style-type: none;
+}
+
+#forum-post ul { 
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#post-list li {
+    background-color:rgb(108, 108, 108);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+}
+
+#delete, #edit {
+    cursor: pointer;
+    font-size: large;
+}
+
+#edit{
+    margin-left: auto;
+}
+
+#list-text {
+    display: flex;
+    flex: 1;
+    height: auto;
+}
+
+#right-side {
+    min-height: 80svh;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#left-side {
+    display: none;
+}
+
+#postInput {
+    background-color: #ffffff;
+}
+
+#post-list {
+    padding: 0;
+    margin: 0 0 0 20px;
+}
+
+#post-list li {
+    background-color:rgb(108, 108, 108);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    margin-right: 20px;
+}
+
+#form-wrapper {
+    text-align: center;
+    margin: 0 20px 0 20px;
+    
+}
+
+#red {
+    color: #FF1003;
+    margin-right: 10px;
+    font-size: larger;
+    font-weight:700;
+}
+
+.hide {
+    display: none;
+}
+
+#editPost {
+    display: flex;
+    width: 200px;
+    flex-wrap: wrap;
+
+
+}
+#updateBtn {
+    display: flex;
+    
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+  @media (min-width: 481px) and (max-width: 1024px) {
+    #wrapper {
+        background-color: yellow;
+    }
+
+        /* RIGHT SIDE OF SCREEN STYLE */
+
+    #right-side{
+        display: flex;
+        margin-top: 80px;
+        justify-content: center;
+        align-items: center;
+
+    }
+   
+
+    #description {
+        width: 70vw;
+        background-color:rgb(108, 108, 108);
+        border-radius: 20px;
+        padding: 15px;
+    }
+
+    #post-list li {
+        background-color:rgb(108, 108, 108);
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        gap: 10px;
+    }
+    
+    
+    #question {
+        background-color:rgb(108, 108, 108);
+        display: flex;
+        justify-content: center;
+        height: 10vh;
+        align-items: center;
+        border-radius: 13px;
+    }
+    
+    #form-wrapper {
+        text-align: center;
+        margin-left: 30px;
+        
+    }
+    
+    
+    #list-text {
+        width: 70vw;
+        display: flex;
+        height: auto;
+        justify-content: space-between;
+    }
+    
+    #postInput {
+        width: 35vw;
+    }
+
+
+    }
+
+
+
+/* Media Query for Laptops and Desktops */
+  @media (min-width: 1025px)  {
+
+    #wrapper {
+        display: flex;
+        flex-direction: column;
+        background-image:linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)) ,url(/assets/backgroundpic.jpg);
+        background-size: cover;
+        
+
+    }
+    #main {
+        display: flex;
+    }
+    
+/* LEFTSIDE OF SCREEN STYLING */
+
+#left-side {
+    display: flex;
+    flex-direction: column;
+    width: 45vw;
+    row-gap: 80px;
+    align-items: center;
+    margin-top: 80px;
+
+}
+
+#profile {
+    background-color: #FF1003;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: auto;
+    border-radius: 20px;
+    padding: 30px 0 0 30px;
+    gap: 10px;
+}
+
+#photo-wrapper {
+    width: 150px;
+    display: flex;
+    column-gap: 30px;
+    align-items: center;
+
+}
+
+#text-box1 {
+    margin-left: 10px;
+    font-size: x-large;
+}
+
+#text-box2 {
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+
+
+#profile-pic {
+
+    width: 100%;
+    border-radius: 50%;
+
+}
+
+#friends-list {
+    display: flex;
+    border-radius: 20px;
+    gap: 30px;
+    margin: 20px 0 20px 0;
+}
+
+#friends-wrapper1 {
+    width: 50px;
+    text-align: center;
+}
+
+#friend-pic {
+    width: 100%;
+    border-radius: 50%;
+}
+
+/* RIGHT SIDE OF SCREEN STYLE */
+    
+    #right-side{
+        width: 40vw;
+        margin-top: 80px;
+    }
+
+    #nav-list {
+        background-color: #FF1003;
+        display: flex;
+        padding: 1rem 0;
+        margin: 0;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    #nav-item {
+        list-style: none;
+        margin: 1rem;
+       
+    }
+    #nav-item a {
+        text-decoration: none;
+        color: white;
+    }
+
+    #nav-item:first-child {
+        margin-right: auto;
+        margin-left: 2rem;
+    }
+
+    #description {
+        background-color:rgb(108, 108, 108);
+        border-radius: 20px;
+        padding: 15px;
+    }
+
+    #post-list li {
+        background-color:rgb(108, 108, 108);
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        gap: 10px;
+    }
+    
+    
+    #question {
+        background-color:rgb(108, 108, 108);
+        display: flex;
+        justify-content: center;
+        height: 10vh;
+        align-items: center;
+        border-radius: 13px;
+    }
+
+    #next {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40vw;
+    }
+    
+    #form-wrapper {
+        text-align: center;
+        margin-top: 40px;
+        
+    }
+    
+    
+    #list-text {
+        width: auto;
+        display: flex;
+        height: auto;
+        justify-content: space-between;
+    }
+
+    
+
+
+}
+  
